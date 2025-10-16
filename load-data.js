@@ -92,3 +92,13 @@ async function loadAlsoLike(name) {
         console.error("Error fetching similar Pokémon:", error);
     }
 }
+
+// back to top button functionality
+const backToTopBtn = document.querySelector(".back-to-top");
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

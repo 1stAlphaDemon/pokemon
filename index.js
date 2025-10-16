@@ -186,3 +186,13 @@ function loadSinglePokemonPage(name) {
     const locationURL = window.location.href = `single-pokemon.html?name=${name}`;
     console.log(locationURL);
 }
+
+// back to top button functionality
+const backToTopBtn = document.querySelector(".back-to-top");
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
