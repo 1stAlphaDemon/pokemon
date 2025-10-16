@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+
+    <!-- link custom css file -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- link for favicon -->
+    <link rel="icon" href="assets/favicon.ico" />
+</head>
+
+<body onload="fetchPokemonTypes(); fetchPokemonCards();">
+    <!-- header -->
+    <header class="page-header">
+        <!-- logo container -->
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/pokemon logo.png" alt="Logo" class="logo-image" /></a>
+        </div>
+
+        <!-- title container -->
+        <div class="title-container">
+            <h1 class="title-main">Pokémon</h1>
+            <p class="title-description">Discover the world of Pokémon.</p>
+        </div>
+    </header>
+
+    <!-- main navigation -->
+    <nav class="main-navigator">
+        <div class="filter-container">
+            <div class="search-container">
+                <input id="search-text" type="text" class="search-input" placeholder="Search Pokémon by name" />
+                <button class="search-button">Search</button>
+                <button class="clear-button">Clear</button>
+            </div>
+            <div class="sort-container">
+                <label for="sort" class="sort-label">Sort By:</label>
+                <select name="sort" id="sort" class="sort-select">
+                    <option value="0">Name ASC</option>
+                    <option value="1">Name DESC</option>
+                    <option value="2">ID ASC</option>
+                    <option value="3">ID DESC</option>
+                </select>
+            </div>
+        </div>
+        <div class="type-container">
+            <h1 class="type-list-label">Filter by Type:</h1>
+            <ul class="type-list" id="type-list">
+                <!-- dynamically populated -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <section class="main-container">
+        <!-- card list start -->
+        <div class="card-list">
+            <!-- dynamically populated -->
+        </div>
+        <!-- card list end -->
+        <div class="load-more-container">
+            <button class="load-more-button">Load More...</button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="assets/pokemon logo.png" alt="Logo" class="footer-logo-image">
+            </div>
+            <div class="description-card">
+                <p class="footer-description">Explore the world of Pokémon with us!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© 2025 Pokémon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <button class="back-to-top-button">&UpArrow;</button>
+    </div>
+
+    <!-- link main js file -->
+    <script src="index.js"></script>
+</body>
+
+</html>

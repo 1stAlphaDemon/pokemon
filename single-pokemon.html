@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+
+    <!-- link custom css file -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- link for favicon -->
+    <link rel="icon" href="assets/favicon.ico" />
+</head>
+
+<body onload="loadData(name);">
+    <!-- header -->
+    <header class="page-header">
+        <!-- logo container -->
+        <div class="logo-container">
+            <a href="index.html"> <img src="assets/pokemon logo.png" alt="Logo" class="logo-image" /></a>
+        </div>
+
+        <!-- title container -->
+        <div class="title-container">
+            <h1 class="title-main">Pokémon</h1>
+            <p class="title-description">Discover the world of Pokémon.</p>
+        </div>
+    </header>
+
+    <!-- main container -->
+    <section class="main-container">
+        <!-- card list start -->
+        <div class="card-list">
+            <!-- dynamically populated -->
+            <div class="single-pokemon-container">
+                <div class="pokemon-details-card">
+                    <div class="pokemon-card-header">
+                        <h1 class="pokemon-name">Bulbasaur</h1>
+                        <p class="pokemon-id">#001</p>
+                    </div>
+                    <div class="pokemon-types">
+                        <span class="pokemon-type grass">Grass</span>
+                        <span class="pokemon-type poison">Poison</span>
+                    </div>
+                    <div class="pokemon-stats">
+                        <div class="stat">
+                            <span class="stat-name">HP:</span>
+                            <span class="stat-value">45</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Attack:</span>
+                            <span class="stat-value">49</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Defense:</span>
+                            <span class="stat-value">49</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Sp. Atk:</span>
+                            <span class="stat-value">65</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Sp. Def:</span>
+                            <span class="stat-value">65</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Speed:</span>
+                            <span class="stat-value">45</span>
+                        </div>
+                    </div>
+                    <div class="pokemon-abilities">
+                        <h2 class="abilities-title">Abilities:</h2>
+                        <ul class="abilities-list">
+                            <li class="ability overgrow">Overgrow</li>
+                            <li class="ability chlorophyll">Chlorophyll</li>
+                        </ul>
+                    </div>
+                    <div class="pokemon-weight">
+                        <h2 class="weight-title">Weight:</h2>
+                        <p class="weight-value">6.9 kg</p>
+                    </div>
+                    <div class="pokemon-height">
+                        <h2 class="height-title">Height:</h2>
+                        <p class="height-value">0.7 m</p>
+                    </div>
+                    <div class="pokemon-experience">
+                        <h2 class="experience-title">Experience:</h2>
+                        <p class="experience-value">64</p>
+                    </div>
+                </div>
+                <div class="pokemon-image-container">
+                    <div class="front-image">
+                        <h2 class="image-label">Front</h2>
+                        <img src=""
+                            alt="Front" class="pokemon-image" id="front-image" />
+                    </div>
+                    <div class="back-image">
+                        <h2 class="image-label">Back</h2>
+                        <img src=""
+                            alt="Back" class="pokemon-image" id="back-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card list end -->
+
+        <div class="divider">
+            <hr class="divider-line">
+        </div>
+
+        <div class="also-like">
+            <h2 class="also-like-title">You might also like:</h2>
+            <div class="also-like-list">
+                <!-- dynamically generated content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="assets/pokemon logo.png" alt="Logo" class="footer-logo-image">
+            </div>
+            <div class="description-card">
+                <p class="footer-description">Explore the world of Pokémon with us!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© 2025 Pokémon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <button class="back-to-top-button">&UpArrow;</button>
+    </div>
+
+    <!-- link main js file -->
+    <script src="load-data.js"></script>
+</body>
+
+</html>
